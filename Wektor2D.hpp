@@ -29,13 +29,11 @@ public:
         return y;
     }
 
-    Wektor2D operator+ (Wektor2D& A)
-    {
+    Wektor2D operator+ (const Wektor2D& A) const {
         return Wektor2D(x + A.x, y + A.y);
     }
 
-    double operator* (Wektor2D& A)
-    {
+    double operator* (const Wektor2D& A) const {
         return x * A.x + y * A.y;
     }
 
